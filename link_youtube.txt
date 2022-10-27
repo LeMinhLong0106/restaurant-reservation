@@ -1,1 +1,9 @@
 https://www.youtube.com/watch?v=8KaBeq9JzrQ
+
+xử lý lỗi "run dev" khi cài Laravel Breeze
+composer require laravel/breeze:1.9.2
+php artisan breeze:install
+npm install
+npm run dev
+
+npm install tailwindcss@npm:@tailwindcss/postcss7-compat postcss@^7 autoprefixer@^9
