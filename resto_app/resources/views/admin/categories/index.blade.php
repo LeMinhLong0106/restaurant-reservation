@@ -35,7 +35,7 @@
                                         </th>
                                     </tr>
                                 </thead>
-                                {{-- <tbody>
+                                <tbody>
                                     @foreach ($categories as $category)
                                         <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                                             <td
@@ -44,6 +44,8 @@
                                             </td>
                                             <td
                                                 class="py-4 px-6 text-sm font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                                {{-- <img src="{{ asset('storage/app/' . $category->image) }}" --}}
+                                                {{-- <img src="{{ Storage::url('app/' . $category->image) }}" --}}
                                                 <img src="{{ Storage::url($category->image) }}"
                                                     class="w-16 h-16 rounded">
                                             </td>
@@ -69,7 +71,7 @@
                                             </td>
                                         </tr>
                                     @endforeach
-                                </tbody> --}}
+                                </tbody>
                             </table>
                         </div>
                     </div>

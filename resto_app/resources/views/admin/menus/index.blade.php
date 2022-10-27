@@ -36,7 +36,7 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    {{-- @foreach ($menus as $menu)
+                                    @foreach ($menus as $menu)
                                         <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                                             <td
                                                 class="py-4 px-6 text-sm font-medium text-gray-900 whitespace-nowrap dark:text-white">
@@ -67,7 +67,7 @@
                                                 </div>
                                             </td>
                                         </tr>
-                                    @endforeach --}}
+                                    @endforeach
                                 </tbody>
                             </table>
                         </div>
