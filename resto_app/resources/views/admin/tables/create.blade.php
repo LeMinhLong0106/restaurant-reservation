@@ -40,9 +40,18 @@
                             <label for="status" class="block text-sm font-medium text-gray-700">Status</label>
                             <div class="mt-1">
                                 <select id="status" name="status" class="form-multiselect block w-full mt-1">
-                                    @foreach (App\Enums\TableStatus::cases() as $status)
+                                    {{-- @foreach (App\Enums\TableStatus::cases() as $status)
                                         <option value="{{ $status->value }}">{{ $status->name }}</option>
+                                    @endforeach --}}
+
+                                    @foreach ($status as $statu)
+                                        <option value="{{ $statu }}">{{ $statu }}</option>
                                     @endforeach
+
+                                    {{-- <option value="pending">Pending</option>
+                                    <option value="avaliable">Avaliable</option>
+                                    <option value="unavaliable">Unavaliable</option> --}}
+
                                 </select>
                             </div>
                             @error('status')
@@ -53,9 +62,17 @@
                             <label for="location" class="block text-sm font-medium text-gray-700">Location</label>
                             <div class="mt-1">
                                 <select id="location" name="location" class="form-multiselect block w-full mt-1">
-                                    @foreach (App\Enums\TableLocation::cases() as $location)
+                                    {{-- @foreach (App\Enums\TableLocation::cases() as $location)
                                         <option value="{{ $location->value }}">{{ $location->name }}</option>
+                                    @endforeach --}}
+
+                                    @foreach ($location as $locations)
+                                        <option value="{{ $locations }}">{{ $locations }}</option>
                                     @endforeach
+
+                                    {{-- <option value="front">Front</option>
+                                    <option value="inside">Inside</option>
+                                    <option value="outside">Outside</option> --}}
                                 </select>
                             </div>
                             @error('location')
