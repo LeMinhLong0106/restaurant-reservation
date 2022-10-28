@@ -27,7 +27,7 @@ class TableController extends Controller
      */
     public function create()
     {
-        $status = ['pending', 'avaliable', 'unavaliable'];
+        $status = ['pending', 'available', 'unavailable'];
         $location = ['front', 'inside', 'outside'];
         // dd($status);
         return view('admin.tables.create', compact('status', 'location'));
@@ -70,7 +70,7 @@ class TableController extends Controller
      */
     public function edit(Table $table)
     {
-        $status = ['pending', 'avaliable', 'unavaliable'];
+        $status = ['pending', 'available', 'unavailable'];
         $location = ['front', 'inside', 'outside'];
 
         return view('admin.tables.edit', compact('table', 'status', 'location'));
